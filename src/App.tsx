@@ -2,6 +2,9 @@ import './App.css'
 import { app } from './firebase'
 import { useEffect, useState } from 'react'
 import { getDatabase, ref, onValue } from "firebase/database";
+import { BrowserRouter, Routes, Route } from "react-router";
+import { Home } from './pages/Home';
+import { Internship } from './pages/Internship';
 
 function App() {
 
@@ -34,7 +37,12 @@ function App() {
   console.log(data)
 
   return (
-    <h1 className='text-red-600'>Hello, world!</h1>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/:id" element={<Internship />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
