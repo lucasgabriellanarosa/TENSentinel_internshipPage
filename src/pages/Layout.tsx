@@ -4,7 +4,7 @@ import { Header } from "../components/Header";
 export const Layout = () => {
     
   return (
-    <div>
+    <div className="bg-bgColor min-h-screen flex flex-col items-center">
 
         <Header />
         <Outlet />

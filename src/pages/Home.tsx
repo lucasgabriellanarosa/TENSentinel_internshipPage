@@ -6,8 +6,9 @@ export const Home = () => {
   const { internshipData } = useInternship()
 
   return (
-    <ul>
-      <h2>Internships Opportunities</h2>
+    <ul className="flex flex-col bg-blue-800">
+
+      <h2 className="text-3xl">Internships Opportunities</h2>
 
       {
 
