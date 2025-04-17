@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&family=Inconsolata:wght@200..900&display=swap');
 @import "tailwindcss";
 
 @theme {
     --color-bgColor: #F9F9F9;
     --color-headerColor: #1F2937;
+    --color-internshipTopColor: #AAB5C5;
+    --color-internshipBottomColor: #CDD7E4;
+
+    --font-inconsolata: "Inconsolata", monospace;
+    --font-greatPrimer: "IM Fell Great Primer SC", serif;
 }
