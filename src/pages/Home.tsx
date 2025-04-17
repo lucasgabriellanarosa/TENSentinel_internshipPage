@@ -1,12 +1,22 @@
-import { useInternship } from "../hooks/useInternship";
+import { InternshipContainer } from "../components/InternshipContainer"
+import { useInternship } from "../hooks/useInternship"
 
 export const Home = () => {
 
-  const { internshipData } = useInternship();
-
-  console.log(internshipData)
+  const { internshipData } = useInternship()
 
   return (
-    <div>Home</div>
+    <ul>
+      <h2>Internships Opportunities</h2>
+
+      {
+
+        internshipData.map((_internship, key) => (
+          <InternshipContainer key={key} id={key} />
+        ))
+
+      }
+
+    </ul>
   )
 }
